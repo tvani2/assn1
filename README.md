@@ -67,3 +67,14 @@ Hyperparameter ოპტიმიზაცია:
     
     თითოეული მოდელისთვის ვეძებდი ოპტიმალურ პარამეტრებს და ვაკვირდებოდი როგორ ართმევდა თავს overfitting-ს. საბოლოოდ Gradient Boosting-მა აჩვენა საუკეთესო ბალანსი სიზუსტესა და სტაბილურობას შორის. გრაფიკებზე ჩანს, რომ უმრავლეს შემთხვევაში ფასის პროგნოზი ძალიან ახლოს იყო რეალურ მონაცემებთან. ასევე, train და test შედეგებს შორის სხვაობა მხოლოდ ≈0.05 იყო, რაც მიუთითებს მოდელის მაღალი გენერალიზაციის უნარზე.
 
+
+MLflow Tracking: 
+MLflow ექსპერიმენტების ბმული: 
+https://dagshub.com/tvani2/assn1.mlflow/#/experiments/4?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D 
+
+ჩაწერილი მეტრიკების აღწერა:
+RMSE - საშუალო აცდენა predicted და რეალურ ფასს შორის
+R2 - [0, 1] რეინჯში რამდენად კარგად აკეთებს პრედიქციას
+
+საუკეთესო მოდელის შედეგები:
+საბოლოო შედეგი მივიღე 0.13137.  model_experiment.ipynb -ში ბოლო პლოტზე ჩანს residuals, რაც ახლოსაა 0-თან. 
